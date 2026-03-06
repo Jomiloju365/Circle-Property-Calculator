@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circumference Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maindiv">
+        <h1><span id="circle">Circle</span> Properties Calculator</h1>
+        <label for="radius">Radius: </label>
+        <input id="radius" type="number"><br><br><br>
+
+        <label id="tethaLabel" for="tetha">Tetha: </label>
+        <input id="tetha" type="number" placeholder="Angle in degrees"><br><br><br>
+
+        <div class="dropdown">
+            <select name="Action" id="Action">
+                <option value="Area">Area</option>
+                <option value="Diameter">Diameter</option>
+                <option value="Circumference">Circumference</option>
+                <option value="Arc Length">Arc Length</option>
+                <option value="Sector Area">Sector Area</option>
+                <option value="Chord length">Chord length</option>
+            </select>
+            <button onclick="Calculate()">Go</button>
+        </div>
+
+        <h2 id="answer"></h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
