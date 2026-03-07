@@ -43,3 +43,11 @@ input{
     border-radius: 10px;
 }
 
+hr{
+    background-color: burlywood;
+}
+
+#Credits{
+    font-size: 22px;
+    color: white;
+}
