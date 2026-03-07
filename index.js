@@ -28,31 +28,46 @@ function Diameter(){
 function Arc_length(){
     let radius = Number(document.getElementById("radius").value);
     let tetha = Number(document.getElementById("tetha").value);
+    
+    if (!tetha) {
+        alert("Tetha is required")
+    } else {
     let Result =  (tetha/360) * 2 * PI * radius ;
 
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
+    }
 }
 
 function Sector_Area(){
     let radius = Number(document.getElementById("radius").value);
     let tetha = Number(document.getElementById("tetha").value);
+    
+     if (!tetha) {
+        alert("Tetha is required")
+    } else {
     let Result =  (tetha/360) * PI * radius * radius ;
 
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
+    }
 }
 
 function Chord_length(){
     let radius = Number(document.getElementById("radius").value);
     let tetha = Number(document.getElementById("tetha").value);
+    
+ if (!tetha) {
+     alert("Tetha is required")
+ } else {
     let Result = 2 * radius * Math.sin((tetha * PI / 180) / 2) ;
     console.log(Math.sin((tetha * PI / 180) / 2));
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
+ }
 }
 
 
