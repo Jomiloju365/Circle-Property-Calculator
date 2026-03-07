@@ -1,36 +1,54 @@
 const PI = 3.14;
 
 function Circumference(){
+     if (!radius) {
+    alert("Radius is required")
+    } else{
     let radius = Number(document.getElementById("radius").value);
     let Result = 2 * PI * radius;
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
+    }
 }
 
 function Area(){
     let radius = Number(document.getElementById("radius").value);
+    
+    if (!radius) {
+    alert("Radius is required")
+    } else{
     let Result = PI * radius * radius;
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
+    }
 }
 
 function Diameter(){
     let radius = Number(document.getElementById("radius").value);
+    
+    if (!radius) {
+        alert("Radius is required")
+    } else{
     let Result =  2 * radius ;
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
-    
+    }
 }
 
 function Arc_length(){
     let radius = Number(document.getElementById("radius").value);
     let tetha = Number(document.getElementById("tetha").value);
     
+    if (!tetha && !radius) {
+        alert("inputs can't be empty")
+    } else
     if (!tetha) {
-        alert("Tetha is required")
+        alert("Theta is required")
+    } else if (!radius) {
+        alert("Radius is required")
     } else {
     let Result =  (tetha/360) * 2 * PI * radius ;
 
@@ -44,8 +62,13 @@ function Sector_Area(){
     let radius = Number(document.getElementById("radius").value);
     let tetha = Number(document.getElementById("tetha").value);
     
-     if (!tetha) {
-        alert("Tetha is required")
+    if (!tetha && !radius) {
+        alert("inputs can't be empty")
+    } else
+    if (!tetha) {
+        alert("Theta is required")
+    } else if (!radius) {
+        alert("Radius is required")
     } else {
     let Result =  (tetha/360) * PI * radius * radius ;
 
@@ -59,9 +82,13 @@ function Chord_length(){
     let radius = Number(document.getElementById("radius").value);
     let tetha = Number(document.getElementById("tetha").value);
     
- if (!tetha) {
-     alert("Tetha is required")
- } else {
+    if (!tetha && !radius) {
+     alert("inputs can't be empty")
+     } else if (!tetha) {
+     alert("Theta is required")
+    } else if (!radius) {
+     alert("Radius is required")
+     } else {
     let Result = 2 * radius * Math.sin((tetha * PI / 180) / 2) ;
     console.log(Math.sin((tetha * PI / 180) / 2));
     console.log(radius);
