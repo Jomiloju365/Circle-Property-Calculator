@@ -22,7 +22,7 @@ body{
     box-shadow: 5px 5px rgb(51, 31, 2);
 }
 
-button{
+button, select{
     margin-left: 13px;
     padding: 10px;
     border-radius: 10px;
@@ -39,7 +39,7 @@ button:hover{
 }
 
 input{
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
 }
 

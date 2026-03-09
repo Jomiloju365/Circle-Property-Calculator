@@ -1,11 +1,13 @@
 const PI = 3.14;
 
 function Circumference(){
+    let radius = Number(document.getElementById("radius").value);
+    
      if (!radius) {
     alert("Radius is required")
     } else{
-    let radius = Number(document.getElementById("radius").value);
     let Result = 2 * PI * radius;
+    Result = Math.floor(Result);
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
@@ -19,6 +21,7 @@ function Area(){
     alert("Radius is required")
     } else{
     let Result = PI * radius * radius;
+    Result = Math.floor(Result);
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
@@ -32,6 +35,7 @@ function Diameter(){
         alert("Radius is required")
     } else{
     let Result =  2 * radius ;
+    Result = Math.floor(Result);
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
@@ -51,6 +55,7 @@ function Arc_length(){
         alert("Radius is required")
     } else {
     let Result =  (tetha/360) * 2 * PI * radius ;
+    Result = Math.floor(Result);
 
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
@@ -71,7 +76,7 @@ function Sector_Area(){
         alert("Radius is required")
     } else {
     let Result =  (tetha/360) * PI * radius * radius ;
-
+    Result = Math.floor(Result);
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
     console.log(Result);
@@ -90,6 +95,7 @@ function Chord_length(){
      alert("Radius is required")
      } else {
     let Result = 2 * radius * Math.sin((tetha * PI / 180) / 2) ;
+    Result = Math.floor(Result);
     console.log(Math.sin((tetha * PI / 180) / 2));
     console.log(radius);
     document.getElementById("answer").innerHTML = Result;
@@ -120,6 +126,11 @@ function Calculate(){
     } 
 }
 
+function Reset(){
+  document.getElementById("answer").innerHTML = " ";
+  radius.value = " ";
+  tetha.value = " ";
+}
 
 
 
