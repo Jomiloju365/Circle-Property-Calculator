@@ -1,6 +1,6 @@
 body{
-    color: rgb(0, 0, 0);
-    background-color: rgb(97, 65, 23);
+    color: rgb(255, 255, 255);
+    background-color: darkblue;
     text-align: center; 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,7 +11,7 @@ body{
 
 .maindiv{
     padding: 10px;
-    background-color: burlywood;
+    background: -webkit-linear-gradient(45deg, rgb(255, 255, 255), rgb(0,0,255));
     height: auto;
     width: auto;
     max-width: 450px;
@@ -19,20 +19,41 @@ body{
     margin: auto;
     margin-top: 50px;
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(51, 31, 2);
+    box-shadow: 5px 5px rgb(51, 31, 2);;
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    min-height: 450px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(51, 31, 2);;
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    min-height: 450px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(51, 31, 2);;
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    min-height: 450px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(51, 31, 2);;
 }
 
 button, select{
     margin-left: 13px;
     padding: 10px;
     border-radius: 10px;
-    background-color: hsl(39, 92%, 15%);
+    background: -webkit-linear-gradient(45deg, rgb(0, 0, 255), rgb(255,255,255));
     color: white;
 }
 
-button:hover{
-    background-color: hsl(39, 92%, 25%);
-}
 
 #answer{
     font-size: 30px;
@@ -44,10 +65,10 @@ input{
 }
 
 hr{
-    background-color: burlywood;
+    background-color: white;
 }
 
 #Credits{
-    font-size: 22px;
+    font-size: 0.5em;
     color: white;
 }
