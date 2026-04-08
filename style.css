@@ -50,8 +50,7 @@ button, select{
     margin-left: 13px;
     padding: 10px;
     border-radius: 10px;
-    background: -webkit-linear-gradient(45deg, rgb(0, 0, 255), rgb(255,255,255));
-    color: white;
+    border: none;
 }
 
 
